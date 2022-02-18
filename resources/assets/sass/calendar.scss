@@ -1,0 +1,153 @@
+// Calendar Variables
+$event-reserved: #e67e22;
+$event-confirmed: #3498db;
+$event-finished: #2ecc71;
+$event-canceled: #e74c3c;
+
+.book-calendar {
+    background-color: white;
+    padding: 20px;
+}
+
+.book-calendar-filters .checkbox {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.book-calendar-filters .checkbox label .dot:after {
+    display: inline-block;
+    content: " \25CF";
+    font-size: 15px;
+}
+.book-calendar-filters .checkbox label.reserved .dot {
+    color: $event-reserved;
+}
+.book-calendar-filters .checkbox label.confirmed .dot {
+    color: $event-confirmed;
+}
+.book-calendar-filters .checkbox label.finished .dot {
+    color: $event-finished;
+}
+.book-calendar-filters .checkbox label.canceled .dot {
+    color: $event-canceled;
+}
+
+.book-calendar-content {
+    min-height: calc(100vh - 260px);
+}
+
+/**
+ * Full Calendar Styling
+ */
+
+// Calendar Status
+.fc-event {
+    padding: 2px;
+    color: #ffffff;
+    background-color: #ffffff;
+    border-width: 1px;
+    margin-bottom: 2px;
+}
+.fc-event.reserved {
+    border-color: $event-reserved;
+    background-color: lighten($event-reserved, 15%);
+}
+.fc-event.reserved:hover {
+    background-color: $event-reserved;
+}
+.fc-event.confirmed {
+    border-color: $event-confirmed;
+    background-color: lighten($event-confirmed, 15%);
+}
+.fc-event.confirmed:hover {
+    background-color: $event-confirmed;
+}
+.fc-event.finished {
+    border-color: $event-finished;
+    background-color: lighten($event-finished, 15%);
+}
+.fc-event.finished:hover {
+    background-color: $event-finished;
+}
+.fc-event.canceled {
+    border-color: $event-canceled;
+    background-color: lighten($event-canceled, 15%);
+}
+.fc-event.canceled:hover {
+    background-color: $event-canceled;
+}
+
+// Calendar Event Buttons
+.fc-time-grid-event:hover, .fc-event:hover .fc-content {
+    overflow: visible;
+}
+
+.fc-event .fc-content {
+    cursor: default;
+}
+
+/**
+ * Event Buttons Popover
+ */
+.fc-event .fc-content .fc-buttons {
+    padding: 10px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #777;
+    bottom: 100%;
+    z-index: 99999;
+    min-width: 80px;
+}
+/* Event Buttons Popover Arrow */
+.fc-event .fc-content .fc-buttons:after, .fc-event .fc-content .fc-buttons:before {
+    top: 100%;
+    left: 8px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.fc-event .fc-content .fc-buttons:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 5px;
+    margin-left: -5px;
+}
+.fc-event .fc-content .fc-buttons:before {
+    border-color: rgba(119, 119, 119, 0);
+    border-top-color: #777;
+    border-width: 6px;
+    margin-left: -6px;
+}
+
+.fc-event:hover .fc-content .fc-buttons {
+    display: block;
+}
+
+.fc-event .fc-content .fc-buttons button {
+    margin-right: 10px;
+}
+.fc-event .fc-content .fc-buttons > :last-child {
+    margin-right: 0;
+}
+
+/**
+ * Full Calendar Buttons
+ */
+.fc-button-group button {
+    background-image: none;
+    border-radius: 0px;
+}
+
+.fc-state-default.fc-corner-left {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.fc-state-default.fc-corner-right {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}

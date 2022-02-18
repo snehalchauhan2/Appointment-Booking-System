@@ -1,0 +1,49 @@
+.navigation {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.navigation .navigation-item, .navigation .button-item {
+    background-color: rgba(255,255,255,0.2);
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+    min-height: 80px;
+}
+.navigation .button-item {
+    padding: 10px;
+}
+.navigation .navigation-item {
+    padding: 20px;
+}
+.navigation .navigation-item.selected {
+    border-bottom-color: rgba(255,255,255,1);
+}
+.navigation .button-item button {
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navigation .navigation-item {
+        display: none;
+    }
+    .navigation .navigation-item.selected {
+        display: block;
+    }
+}
+
+.available-time {
+    margin-bottom: 10px;
+}
+.available-time button {
+    background-color: #fff;
+    color: $brand-primary;
+    border: 1px solid $brand-primary;
+}
+.available-time button.selected {
+    background-color: $brand-primary;
+    color: #fff;
+}

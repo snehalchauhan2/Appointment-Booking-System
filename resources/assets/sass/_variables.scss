@@ -1,0 +1,53 @@
+
+// Main
+$body-bg: #F1F3F5;
+$padding-base-vertical: 10px;
+
+// Borders
+$book-border-color: darken($body-bg, 8%);
+$list-group-border: $book-border-color;
+$navbar-default-border: $book-border-color;
+$panel-default-border: $book-border-color;
+$panel-inner-border: $book-border-color;
+
+// Brands
+$brand-primary: #8e44ad;
+$brand-info: #3498db;
+$brand-success: #2ecc71;
+$brand-warning: #f39c12;
+$brand-danger: #e74c3c;
+
+// Borders
+$border-radius-base:        0px;
+$border-radius-large:       0px;
+$border-radius-small:       0px;
+
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Roboto", sans-serif;
+$font-size-base: 15px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+// Navbar
+$navbar-default-bg: #fff;
+$navbar-height: 60px;
+$navbar-margin-bottom: 0px;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+$form-group-margin-bottom: 25px;
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+// Tables
+$table-cell-padding: 10px;
+
+// Modal
+$modal-inner-padding: 25px;

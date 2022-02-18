@@ -1,0 +1,30 @@
+{
+    "name": "kingofcode/laravel-uploadable",
+    "description": "Laravel Uploadable trait to automatically upload images and files with minimum configuration",
+    "type": "library",
+    "version": "0.1.7",
+    "license": "MIT",
+    "keywords": [
+        "upload",
+        "uploadable",
+        "auto-upload",
+        "file-upload",
+        "image-upload",
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "Tiago Silva Pereira Rodrigues",
+            "email": "contato@kingofcode.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "intervention/image": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+          "KingOfCode\\Upload\\": "src/"
+        }
+    }
+}

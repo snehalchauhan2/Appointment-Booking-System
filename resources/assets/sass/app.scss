@@ -1,0 +1,27 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Dashboard Styles
+@import "dashboard/dashboard";
+
+//Full Calendar
+@import "~fullcalendar/dist/fullcalendar.css";
+
+// Calendar Custom Styles
+@import "calendar";
+
+// Site Booking Component Styles
+@import "booking";
+
+// System Custom Styles
+@import "style";
+
+//Izi Toast
+@import "~izitoast/dist/css/iziToast.css";
